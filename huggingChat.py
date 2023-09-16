@@ -4,7 +4,8 @@ from streamlit_extras.colored_header import colored_header
 from streamlit_extras.add_vertical_space import add_vertical_space
 from langchain import PromptTemplate, HuggingFaceHub, LLMChain
 from dotenv import load_dotenv
-set HUGGINGFACEHUB_API_TOKEN=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
+import os
+
 
 
 import pandas as pd
