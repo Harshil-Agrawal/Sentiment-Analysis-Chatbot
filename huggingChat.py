@@ -5,12 +5,7 @@ from streamlit_extras.add_vertical_space import add_vertical_space
 from langchain import PromptTemplate, HuggingFaceHub, LLMChain
 from langchain.prompts import ChatPromptTemplate
 from dotenv import load_dotenv
-<<<<<<< HEAD
 import os 
-=======
-import os
-
->>>>>>> bcf494bbbf5159c5ff98584d9ae0416a4c7d703d
 
 
 import pandas as pd
