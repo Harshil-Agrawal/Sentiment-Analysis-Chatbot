@@ -35,28 +35,23 @@ st.set_page_config(page_title="Amazon Product App")
 
 # Sidebar contents
 st.sidebar.image("WebHelpers.png")
-st.divider()
+st.sidebar.divider()
 st.sidebar.markdown('''
 ## About
 This app is an Review Sentiment Analysis and a LLM-powered chatbot for Amazon Product related queries:
 ''')
 st.title('Amazon Product Queries App 💬')
 
-#menu = ['Amazon Review Sentiment Analysis','Product Queries BOT'] 
-#choice  = st.selectbox("Select an option", menu)
-#add_vertical_space(10)
-#st.write('Made by [Harshil Agrawal](https://github.com/Harshil-Agrawal)')
 
-custom_css = """
-<style>
-body {
-    background-color: #f0f0f0; /* Set your desired background color here */
-}
-</style>
-"""
+def set_background_color(color):
+    style = f"background-color: {color}; padding: 10px;"
+    div = f'<div style="{style}"></div>'
+    st.markdown(div, unsafe_allow_html=True)
 
+# Set the background color for the entire app
+set_background_color("#0000ff")  # Replace with your desired color
 # Apply the custom CSS
-st.markdown(custom_css, unsafe_allow_html=True)
+#st.markdown(custom_css, unsafe_allow_html=True)
 
 st.header("Your Amazon Assistant 💬")
 st.divider()
